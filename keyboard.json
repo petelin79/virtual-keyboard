@@ -1,0 +1,834 @@
+{
+    "x192": {
+        "type": "regular",
+        "key_detail": {
+            "en": {
+                "key": "`",
+                "shift_key": "None"
+            },
+            "ru": {
+                "key": "`",
+                "shift_key": "None"
+            }
+        }
+    },   
+    "x49": {
+        "type": "regular",
+        "key_detail": {
+            "en": {
+                "key": "1",
+                "shift_key": "None"
+            },
+            "ru": {
+                "key": "1",
+                "shift_key": "None"
+            }
+        }
+    },
+    "x50": {
+        "type": "regular",
+        "key_detail": {
+            "en": {
+                "key": "2",
+                "shift_key": "None"
+            },
+            "ru": {
+                "key": "2",
+                "shift_key": "None"
+            }
+        }
+    },
+    "x51": {
+        "type": "regular",
+        "key_detail": {
+            "en": {
+                "key": "3",
+                "shift_key": "None"
+            },
+            "ru": {
+                "key": "3",
+                "shift_key": "None"
+            }
+        }
+    },
+    "x52": {
+        "type": "regular",
+        "key_detail": {
+            "en": {
+                "key": "4",
+                "shift_key": "None"
+            },
+            "ru": {
+                "key": "4",
+                "shift_key": "None"
+            }
+        }
+    },
+    "x53": {
+        "type": "regular",
+        "key_detail": {
+            "en": {
+                "key": "5",
+                "shift_key": "None"
+            },
+            "ru": {
+                "key": "5",
+                "shift_key": "None"
+            }
+        }
+    },
+    "x54": {
+        "type": "regular",
+        "key_detail": {
+            "en": {
+                "key": "6",
+                "shift_key": "None"
+            },
+            "ru": {
+                "key": "6",
+                "shift_key": "None"
+            }
+        }
+    },
+    "x55": {
+        "type": "regular",
+        "key_detail": {
+            "en": {
+                "key": "7",
+                "shift_key": "None"
+            },
+            "ru": {
+                "key": "7",
+                "shift_key": "None"
+            }
+        }
+    },
+    "x56": {
+        "type": "regular",
+        "key_detail": {
+            "en": {
+                "key": "8",
+                "shift_key": "None"
+            },
+            "ru": {
+                "key": "8",
+                "shift_key": "None"
+            }
+        }
+    },
+    "x57": {
+        "type": "regular",
+        "key_detail": {
+            "en": {
+                "key": "9",
+                "shift_key": "None"
+            },
+            "ru": {
+                "key": "9",
+                "shift_key": "None"
+            }
+        }
+    },
+    "x48": {
+        "type": "regular",
+        "key_detail": {
+            "en": {
+                "key": "0",
+                "shift_key": "None"
+            },
+            "ru": {
+                "key": "0",
+                "shift_key": "None"
+            }
+        }
+    },
+    "x173": {
+        "type": "regular",
+        "key_detail": {
+            "en": {
+                "key": "-",
+                "shift_key": "None"
+            },
+            "ru": {
+                "key": "-",
+                "shift_key": "None"
+            }
+        }
+    },
+    "x61": {
+        "type": "regular",
+        "key_detail": {
+            "en": {
+                "key": "=",
+                "shift_key": "None"
+            },
+            "ru": {
+                "key": "=",
+                "shift_key": "None"
+            }
+        }
+    },
+    "x8": {
+        "type": "double",
+        "key_detail": {
+            "en": {
+                "key": "Backspace",
+                "shift_key": "None"
+            },
+            "ru": {
+                "key": "Backspace",
+                "shift_key": "None"
+            }
+        }
+    },
+    "x9": {
+        "type": "regular",
+        "key_detail": {
+            "en": {
+                "key": "Tab",
+                "shift_key": "None"
+            },
+            "ru": {
+                "key": "TAB",
+                "shift_key": "None"
+            }
+        }
+    },
+    "x81": {
+        "type": "regular",
+        "key_detail": {
+            "en": {
+                "key": "q",
+                "shift_key": "None"
+            },
+            "ru": {
+                "key": "q",
+                "shift_key": "None"
+            }
+        }
+    },
+    "x87": {
+        "type": "regular",
+        "key_detail": {
+            "en": {
+                "key": "w",
+                "shift_key": "None"
+            },
+            "ru": {
+                "key": "w",
+                "shift_key": "None"
+            }
+        }
+    },
+    "x69": {
+        "type": "regular",
+        "key_detail": {
+            "en": {
+                "key": "e",
+                "shift_key": "None"
+            },
+            "ru": {
+                "key": "e",
+                "shift_key": "None"
+            }
+        }
+    },
+    "x82": {
+        "type": "regular",
+        "key_detail": {
+            "en": {
+                "key": "r",
+                "shift_key": "None"
+            },
+            "ru": {
+                "key": "r",
+                "shift_key": "None"
+            }
+        }
+    },
+    "x84": {
+        "type": "regular",
+        "key_detail": {
+            "en": {
+                "key": "t",
+                "shift_key": "None"
+            },
+            "ru": {
+                "key": "t",
+                "shift_key": "None"
+            }
+        }
+    },
+    "x89": {
+        "type": "regular",
+        "key_detail": {
+            "en": {
+                "key": "y",
+                "shift_key": "None"
+            },
+            "ru": {
+                "key": "y",
+                "shift_key": "None"
+            }
+        }
+    },
+    "x85": {
+        "type": "regular",
+        "key_detail": {
+            "en": {
+                "key": "u",
+                "shift_key": "None"
+            },
+            "ru": {
+                "key": "u",
+                "shift_key": "None"
+            }
+        }
+    },
+    "x73": {
+        "type": "regular",
+        "key_detail": {
+            "en": {
+                "key": "i",
+                "shift_key": "None"
+            },
+            "ru": {
+                "key": "i",
+                "shift_key": "None"
+            }
+        }
+    },
+    "x79": {
+        "type": "regular",
+        "key_detail": {
+            "en": {
+                "key": "o",
+                "shift_key": "None"
+            },
+            "ru": {
+                "key": "o",
+                "shift_key": "None"
+            }
+        }
+    },
+    "x80": {
+        "type": "regular",
+        "key_detail": {
+            "en": {
+                "key": "p",
+                "shift_key": "None"
+            },
+            "ru": {
+                "key": "p",
+                "shift_key": "None"
+            }
+        }
+    },
+    "x219": {
+        "type": "regular",
+        "key_detail": {
+            "en": {
+                "key": "[",
+                "shift_key": "None"
+            },
+            "ru": {
+                "key": "[",
+                "shift_key": "None"
+            }
+        }
+    },
+    "x221": {
+        "type": "regular",
+        "key_detail": {
+            "en": {
+                "key": "]",
+                "shift_key": "None"
+            },
+            "ru": {
+                "key": "]",
+                "shift_key": "None"
+            }
+        }
+    },
+    "x220": {
+        "type": "regular",
+        "key_detail": {
+            "en": {
+                "key": "\\",
+                "shift_key": "None"
+            },
+            "ru": {
+                "key": "\\",
+                "shift_key": "None"
+            }
+        }
+    },
+    "x46": {
+        "type": "regular",
+        "key_detail": {
+            "en": {
+                "key": "Del",
+                "shift_key": "None"
+            },
+            "ru": {
+                "key": "Del",
+                "shift_key": "None"
+            }
+        }
+    },
+    "x20": {
+        "type": "double",
+        "key_detail": {
+            "en": {
+                "key": "CapsLk",
+                "shift_key": "None"
+            },
+            "ru": {
+                "key": "CapsLk",
+                "shift_key": "None"
+            }
+        }
+    },
+    "x65": {
+        "type": "regular",
+        "key_detail": {
+            "en": {
+                "key": "a",
+                "shift_key": "None"
+            },
+            "ru": {
+                "key": "a",
+                "shift_key": "None"
+            }
+        }
+    },
+    "x83": {
+        "type": "regular",
+        "key_detail": {
+            "en": {
+                "key": "s",
+                "shift_key": "None"
+            },
+            "ru": {
+                "key": "s",
+                "shift_key": "None"
+            }
+        }
+    },
+    "x68": {
+        "type": "regular",
+        "key_detail": {
+            "en": {
+                "key": "d",
+                "shift_key": "None"
+            },
+            "ru": {
+                "key": "d",
+                "shift_key": "None"
+            }
+        }
+    },
+    "x70": {
+        "type": "regular",
+        "key_detail": {
+            "en": {
+                "key": "f",
+                "shift_key": "None"
+            },
+            "ru": {
+                "key": "f",
+                "shift_key": "None"
+            }
+        }
+    },
+    "x71": {
+        "type": "regular",
+        "key_detail": {
+            "en": {
+                "key": "g",
+                "shift_key": "None"
+            },
+            "ru": {
+                "key": "g",
+                "shift_key": "None"
+            }
+        }
+    },
+    "x72": {
+        "type": "regular",
+        "key_detail": {
+            "en": {
+                "key": "h",
+                "shift_key": "None"
+            },
+            "ru": {
+                "key": "h",
+                "shift_key": "None"
+            }
+        }
+    },
+    "x74": {
+        "type": "regular",
+        "key_detail": {
+            "en": {
+                "key": "j",
+                "shift_key": "None"
+            },
+            "ru": {
+                "key": "j",
+                "shift_key": "None"
+            }
+        }
+    },
+    "x75": {
+        "type": "regular",
+        "key_detail": {
+            "en": {
+                "key": "k",
+                "shift_key": "None"
+            },
+            "ru": {
+                "key": "k",
+                "shift_key": "None"
+            }
+        }
+    },
+    "x76": {
+        "type": "regular",
+        "key_detail": {
+            "en": {
+                "key": "l",
+                "shift_key": "None"
+            },
+            "ru": {
+                "key": "д",
+                "shift_key": "None"
+            }
+        }
+    },
+    "x59": {
+        "type": "regular",
+        "key_detail": {
+            "en": {
+                "key": ";",
+                "shift_key": "None"
+            },
+            "ru": {
+                "key": "ж",
+                "shift_key": "None"
+            }
+        }
+    },
+    "x222": {
+        "type": "regular",
+        "key_detail": {
+            "en": {
+                "key": "'",
+                "shift_key": "None"
+            },
+            "ru": {
+                "key": "э",
+                "shift_key": "None"
+            }
+        }
+    },
+    "x13": {
+        "type": "double",
+        "key_detail": {
+            "en": {
+                "key": "Enter",
+                "shift_key": "None"
+            },
+            "ru": {
+                "key": "Enter",
+                "shift_key": "None"
+            }
+        }
+    },
+    "l16": {
+        "type": "double",
+        "key_detail": {
+            "en": {
+                "key": "Shift",
+                "shift_key": "None"
+            },
+            "ru": {
+                "key": "Shift",
+                "shift_key": "None"
+            }
+        }
+    },
+    "l220": {
+        "type": "regular",
+        "key_detail": {
+            "en": {
+                "key": "\\",
+                "shift_key": "None"
+            },
+            "ru": {
+                "key": "\\",
+                "shift_key": "None"
+            }
+        }
+    },
+    "x90": {
+        "type": "regular",
+        "key_detail": {
+            "en": {
+                "key": "z",
+                "shift_key": "None"
+            },
+            "ru": {
+                "key": "z",
+                "shift_key": "None"
+            }
+        }
+    },
+    "x88": {
+        "type": "regular",
+        "key_detail": {
+            "en": {
+                "key": "x",
+                "shift_key": "None"
+            },
+            "ru": {
+                "key": "x",
+                "shift_key": "None"
+            }
+        }
+    },
+    "x67": {
+        "type": "regular",
+        "key_detail": {
+            "en": {
+                "key": "c",
+                "shift_key": "None"
+            },
+            "ru": {
+                "key": "c",
+                "shift_key": "None"
+            }
+        }
+    },
+    "x86": {
+        "type": "regular",
+        "key_detail": {
+            "en": {
+                "key": "v",
+                "shift_key": "None"
+            },
+            "ru": {
+                "key": "v",
+                "shift_key": "None"
+            }
+        }
+    },
+    "x66": {
+        "type": "regular",
+        "key_detail": {
+            "en": {
+                "key": "b",
+                "shift_key": "None"
+            },
+            "ru": {
+                "key": "b",
+                "shift_key": "None"
+            }
+        }
+    },
+    "x78": {
+        "type": "regular",
+        "key_detail": {
+            "en": {
+                "key": "n",
+                "shift_key": "None"
+            },
+            "ru": {
+                "key": "n",
+                "shift_key": "None"
+            }
+        }
+    },
+    "x77": {
+        "type": "regular",
+        "key_detail": {
+            "en": {
+                "key": "m",
+                "shift_key": "None"
+            },
+            "ru": {
+                "key": "m",
+                "shift_key": "None"
+            }
+        }
+    },
+    "x188": {
+        "type": "regular",
+        "key_detail": {
+            "en": {
+                "key": ",",
+                "shift_key": "None"
+            },
+            "ru": {
+                "key": ",",
+                "shift_key": "None"
+            }
+        }
+    },
+    "x190": {
+        "type": "regular",
+        "key_detail": {
+            "en": {
+                "key": ".",
+                "shift_key": "None"
+            },
+            "ru": {
+                "key": ".",
+                "shift_key": "None"
+            }
+        }
+    },
+    "x191": {
+        "type": "regular",
+        "key_detail": {
+            "en": {
+                "key": "/",
+                "shift_key": "None"
+            },
+            "ru": {
+                "key": "/",
+                "shift_key": "None"
+            }
+        }
+    },
+    "x38": {
+        "type": "regular",
+        "key_detail": {
+            "en": {
+                "key": "up",
+                "shift_key": "None"
+            },
+            "ru": {
+                "key": "up",
+                "shift_key": "None"
+            }
+        }
+    },
+    "r16": {
+        "type": "regular",
+        "key_detail": {
+            "en": {
+                "key": "Shift",
+                "shift_key": "None"
+            },
+            "ru": {
+                "key": "Shift",
+                "shift_key": "None"
+            }
+        }
+    },
+    "l17": {
+        "type": "regular",
+        "key_detail": {
+            "en": {
+                "key": "Ctrl",
+                "shift_key": "None"
+            },
+            "ru": {
+                "key": "Ctrl",
+                "shift_key": "None"
+            }
+        }
+    },
+    "x91": {
+        "type": "regular",
+        "key_detail": {
+            "en": {
+                "key": "WIN",
+                "shift_key": "None"
+            },
+            "ru": {
+                "key": "WIN",
+                "shift_key": "None"
+            }
+        }
+    },
+    "x18": {
+        "type": "regular",
+        "key_detail": {
+            "en": {
+                "key": "Alt",
+                "shift_key": "None"
+            },
+            "ru": {
+                "key": "Alt",
+                "shift_key": "None"
+            }
+        }
+    },
+    "x32": {
+        "type": "long",
+        "key_detail": {
+            "en": {
+                "key": "Space",
+                "shift_key": "None"
+            },
+            "ru": {
+                "key": "Space",
+                "shift_key": "None"
+            }
+        }
+    },
+    "r17": {
+        "type": "regular",
+        "key_detail": {
+            "en": {
+                "key": "Ctrl",
+                "shift_key": "None"
+            },
+            "ru": {
+                "key": "Ctrl",
+                "shift_key": "None"
+            }
+        }
+    },
+    "x37": {
+        "type": "regular",
+        "key_detail": {
+            "en": {
+                "key": "<",
+                "shift_key": "None"
+            },
+            "ru": {
+                "key": "<",
+                "shift_key": "None"
+            }
+        }
+    },
+    "x40": {
+        "type": "regular",
+        "key_detail": {
+            "en": {
+                "key": "down",
+                "shift_key": "None"
+            },
+            "ru": {
+                "key": "down",
+                "shift_key": "None"
+            }
+        }
+    },
+    "x39": {
+        "type": "regular",
+        "key_detail": {
+            "en": {
+                "key": ">",
+                "shift_key": "None"
+            },
+            "ru": {
+                "key": ">",
+                "shift_key": "None"
+            }
+        }
+    }
+}

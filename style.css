@@ -1,0 +1,64 @@
+.main-wrapper {
+  margin: 0 auto;
+  min-width: 60vw;
+  max-width: 80vw;
+}
+
+.keybord-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.print-area {
+  width: 892px;
+  height: 200px;
+  margin: 50px 0;
+}
+
+.text {
+  width: 100%;
+}
+
+.keyboard-area {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:space-between;
+  padding: 4px;
+  gap: 5px;
+  width: 892px;
+}
+
+
+.key-regular {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 50px;
+  height: 45px;
+  border: solid 2px black;
+  border-radius: 5px;
+}
+
+.key-double {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 115px;
+  height: 45px;
+  border: solid 2px black;
+  border-radius: 5px;
+}
+.key-long {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 475px;
+  height: 45px;
+  border: solid 2px black;
+  border-radius: 5px;
+}
