@@ -30,35 +30,27 @@
   width: 892px;
 }
 
-
-.key-regular {
+.key {
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
-  width: 50px;
-  height: 45px;
   border: solid 2px black;
   border-radius: 5px;
+  height: 45px;
+}
+
+.key-regular {
+  width: 50px;
 }
 
 .key-double {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
   width: 115px;
-  height: 45px;
-  border: solid 2px black;
-  border-radius: 5px;
 }
 .key-long {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  width: 475px;
-  height: 45px;
-  border: solid 2px black;
-  border-radius: 5px;
+  width: 415px;
+}
+
+.active {
+  background-color: cadetblue;
 }
