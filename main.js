@@ -107,23 +107,17 @@ document.addEventListener('keydown', (event) => {
         }
         changeLang()
     }
-
-    if (capsLock) {
-        leftShift = true
-        rightShift = true
-        shiftPressing()
-      }
-      else {
-        leftShift = false
-        rightShift = false
-        shiftPressing()
-      }
-
-    if (leftShift || rightShift) {
+    
+    else if (leftShift || rightShift) {
         register = 'shift_key'
         shiftPressing()
     }
-})
+
+    // if (capsLock) {
+    //     register = 'shift_key'
+    //     shiftPressing()
+    // })
+});
 
 
 document.addEventListener('keyup', (event) => {
@@ -133,9 +127,13 @@ document.addEventListener('keyup', (event) => {
     else if (event.code === 'ShiftLeft') {
         leftShift = false
     }
-    if (!leftShift || !rightShift) {
-        register = 'key'
-        shiftPressing()
+
+    if (!capsLock) {
+
+        if (!leftShift || !rightShift) {
+            register = 'key'
+            shiftPressing()
+        }
     }
 })
 
