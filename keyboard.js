@@ -811,7 +811,7 @@ export const x = {
     },
     "x38": {
         "size": "regular",
-        "type": "service",
+        "type": "abc",
         "key_code": "ArrowUp",
         "key_detail": {
             "en": {
@@ -931,7 +931,7 @@ export const x = {
     },
     "x37": {
         "size": "regular",
-        "type": "service",
+        "type": "abc",
         "key_code": "ArrowLeft",
         "key_detail": {
             "en": {
@@ -946,7 +946,7 @@ export const x = {
     },
     "x40": {
         "size": "regular",
-        "type": "service",
+        "type": "abc",
         "key_code": "ArrowDown",
         "key_detail": {
             "en": {
@@ -961,7 +961,7 @@ export const x = {
     },
     "x39": {
         "size": "regular",
-        "type": "service",
+        "type": "abc",
         "key_code": "ArrowRight",
         "key_detail": {
             "en": {

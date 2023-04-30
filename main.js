@@ -1,6 +1,30 @@
 "use strict";
 import { x } from './keyboard.js'
 
+const body = document.querySelector('body')
+const main = document.createElement('main')
+main.classList.add("main-wrapper")
+const div = document.createElement("div")
+div.classList.add("keybord-wrapper")
+const sectionPrint = document.createElement("section")
+sectionPrint.classList.add("print-area")
+const textareaPrint = document.createElement("textarea")
+textareaPrint.classList.add("text")
+textareaPrint.setAttribute("cols", "30")
+textareaPrint.setAttribute("rows", "10")
+const sectionKeyboard = document.createElement("section")
+sectionKeyboard.classList.add("keyboard-area")
+const txt = document.createElement("p")
+txt.classList.add('txt-style')
+txt.textContent = 'A keyboard shortcut for switching a language is left Shift + left Ctrl'
+
+sectionPrint.append(textareaPrint)
+div.append(sectionPrint)
+div.append(sectionKeyboard)
+div.append(txt)
+main.append(div)
+body.append(main)
+
 const keyboardArea = document.querySelector('.keyboard-area')
 const textArea = document.querySelector('.text')
 
@@ -32,9 +56,33 @@ function tst () {
             if  (res[el]['type'] === 'abc') {
                 textArea.value += res[el]['key_detail'][lang][register]
             }
+            else if (res[el]['type'] === 'service') {
+                if (res[el]['key_detail'][lang][register] === "CapsLock" && capsLock === false) {
+                    register = "shift_key"
+                    shiftPressing()
+                    capsLock = true
+                }
+                else if (res[el]['key_detail'][lang][register] === "CapsLock" && capsLock === true) {
+                    register = "key"
+                    shiftPressing()
+                    capsLock = false
+                }
+                if (res[el]['key_detail'][lang][register] === "Shift" && capsLock === false) {
+                    register = "shift_key"
+                    shiftPressing()
+                }
+                if (res[el]['key_detail'][lang][register] === "Tab") {
+                    textArea.value += '\t'
+                }
+            }
+
         })
         btn.addEventListener('mouseup', () => {
             btn.classList.remove('active')
+            if (res[el]['key_detail'][lang][register] === "Shift" && capsLock === false) {
+                register = "key"
+                shiftPressing()
+            }
         })
         keyboardArea.append(btn)
     }
@@ -75,8 +123,6 @@ let leftShift = false
 let rightShift = false
 let capsLock = false
 
-
-
 document.addEventListener('keydown', (event) => {
     if (event.code === 'ControlLeft') {
         leftCtrl = true
@@ -89,7 +135,32 @@ document.addEventListener('keydown', (event) => {
     }
     else if (event.code === 'CapsLock') {
         capsLock = !capsLock
-
+    }
+    else if (event.code === 'Tab') {
+        event.preventDefault()
+        textArea.value += '\t'
+    }
+    else if (event.code === 'AltLeft') {
+        event.preventDefault()
+    }
+    else if (event.code === 'AltRight') {
+        event.preventDefault()
+    }
+    else if (event.code === 'ArrowUp') {
+        event.preventDefault()
+        textArea.value += "⬆"
+    }
+    else if (event.code === 'ArrowLeft') {
+        textArea.value += "⬅"
+        event.preventDefault()
+    }
+    else if (event.code === 'ArrowRight') {
+        textArea.value += "➡"
+        event.preventDefault()
+    }
+    else if (event.code === 'ArrowDown') {
+        textArea.value += "⬇"
+        event.preventDefault()
     }
 
     if (event.repeat && leftCtrl && leftShift) {
@@ -107,16 +178,19 @@ document.addEventListener('keydown', (event) => {
         }
         changeLang()
     }
-    
+
     else if (leftShift || rightShift) {
         register = 'shift_key'
         shiftPressing()
     }
 
-    // if (capsLock) {
-    //     register = 'shift_key'
-    //     shiftPressing()
-    // })
+    if (capsLock) {
+        register = 'shift_key'
+        shiftPressing()
+    }
+
+
+
 });
 
 
@@ -129,7 +203,6 @@ document.addEventListener('keyup', (event) => {
     }
 
     if (!capsLock) {
-
         if (!leftShift || !rightShift) {
             register = 'key'
             shiftPressing()
