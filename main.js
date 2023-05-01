@@ -175,6 +175,8 @@ document.addEventListener('keydown', (event) => {
     }
     else if (event.code === 'CapsLock') {
         capsLock = !capsLock
+        capsPressing()
+        event.preventDefault()
     }
     else if (event.code === 'Tab') {
         textArea.value = textArea.value.substring(0,cursorPosition) + "\t" + textArea.value.substring(cursorPosition)
@@ -232,9 +234,6 @@ document.addEventListener('keydown', (event) => {
         register = 'shift_key'
         shiftPressing()
     }
-
-
-
 });
 
 
@@ -257,16 +256,35 @@ document.addEventListener('keyup', (event) => {
 function changeLang () {
     const buttonKeys = document.querySelectorAll('.key')
     buttonKeys.forEach((el, pos) => {
-        el.textContent=Object.entries(x)[pos][1]['key_detail'][lang][register]
+        if (el.textContent.length === 1) {
+            el.textContent=Object.entries(x)[pos][1]['key_detail'][lang][register]
+        }
     })
 }
 
 function shiftPressing () {
     const buttonKeys = document.querySelectorAll('.key')
     buttonKeys.forEach((el, pos) => {
-        el.textContent=Object.entries(x)[pos][1]['key_detail'][lang][register]
+        if (el.textContent.length === 1) {
+            el.textContent=Object.entries(x)[pos][1]['key_detail'][lang][register]
+        }
     })
 }
+
+function capsPressing () {
+    const buttonKeys = document.querySelectorAll('.key')
+    buttonKeys.forEach((el) => {
+        if (el.textContent === "CapsLock") {
+            if (capsLock) {
+                el.classList.add('capslock-active')
+            }
+            else {
+                el.classList.remove('capslock-active')
+            }
+        }
+    })
+}
+
 
 
 
