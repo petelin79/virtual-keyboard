@@ -30,6 +30,7 @@ const textArea = document.querySelector('.text')
 
 let lang = 'en'
 let register = 'key'
+let cursorPosition = 0
 
 
 function tst () {
@@ -54,7 +55,8 @@ function tst () {
         btn.addEventListener('mousedown', () => {
             btn.classList.add('active')
             if  (res[el]['type'] === 'abc') {
-                textArea.value += res[el]['key_detail'][lang][register]
+                textArea.value = textArea.value.substring(0,cursorPosition) + res[el]['key_detail'][lang][register] + textArea.value.substring(cursorPosition)
+                cursorPosition ++
             }
             else if (res[el]['type'] === 'service') {
                 if (res[el]['key_detail'][lang][register] === "CapsLock" && capsLock === false) {
@@ -72,7 +74,17 @@ function tst () {
                     shiftPressing()
                 }
                 if (res[el]['key_detail'][lang][register] === "Tab") {
-                    textArea.value += '\t'
+                    textArea.value = textArea.value.substring(0,cursorPosition) + "\t" + textArea.value.substring(cursorPosition)
+                    cursorPosition ++
+                }
+                if (res[el]['key_detail'][lang][register] === "Enter") {
+                    textArea.value = textArea.value.substring(0,cursorPosition) + "\r" + textArea.value.substring(cursorPosition)
+                    cursorPosition ++
+                }
+                if (res[el]['key_detail'][lang][register] === "Backspace") {
+                    let endText =  textArea.value.substring(cursorPosition)
+                    textArea.value = textArea.value.substring(0,cursorPosition-1) + endText
+                    cursorPosition --
                 }
             }
 
@@ -84,8 +96,22 @@ function tst () {
                 shiftPressing()
             }
         })
+
+        btn.addEventListener('mouseover', () => {
+            btn.classList.add('key-hover')
+        })
+
+        btn.addEventListener('mouseleave', () => {
+            btn.classList.remove('key-hover')
+        })
+
         keyboardArea.append(btn)
     }
+
+    textArea.addEventListener('click', () => {
+        cursorPosition = textArea.selectionStart
+        console.log(cursorPosition);
+    })
 
     const buttonKeys = document.querySelectorAll('.key')
 
@@ -124,6 +150,7 @@ let rightShift = false
 let capsLock = false
 
 document.addEventListener('keydown', (event) => {
+    // cursorPosition = textArea.selectionStart;
     if (event.code === 'ControlLeft') {
         leftCtrl = true
     }
@@ -137,8 +164,8 @@ document.addEventListener('keydown', (event) => {
         capsLock = !capsLock
     }
     else if (event.code === 'Tab') {
+        textArea.value = textArea.value.substring(0,cursorPosition) + "\t" + textArea.value.substring(cursorPosition)
         event.preventDefault()
-        textArea.value += '\t'
     }
     else if (event.code === 'AltLeft') {
         event.preventDefault()
@@ -147,19 +174,23 @@ document.addEventListener('keydown', (event) => {
         event.preventDefault()
     }
     else if (event.code === 'ArrowUp') {
+        textArea.value = textArea.value.substring(0,cursorPosition) + "⬆" + textArea.value.substring(cursorPosition)
+        cursorPosition++
         event.preventDefault()
-        textArea.value += "⬆"
     }
     else if (event.code === 'ArrowLeft') {
-        textArea.value += "⬅"
+        textArea.value = textArea.value.substring(0,cursorPosition) + "⬅" + textArea.value.substring(cursorPosition)
+        cursorPosition++
         event.preventDefault()
     }
     else if (event.code === 'ArrowRight') {
-        textArea.value += "➡"
+        textArea.value = textArea.value.substring(0,cursorPosition) + "➡" + textArea.value.substring(cursorPosition)
+        cursorPosition++
         event.preventDefault()
     }
     else if (event.code === 'ArrowDown') {
-        textArea.value += "⬇"
+        textArea.value = textArea.value.substring(0,cursorPosition) + "⬇" + textArea.value.substring(cursorPosition)
+        cursorPosition++
         event.preventDefault()
     }
 
