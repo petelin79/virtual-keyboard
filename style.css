@@ -1,0 +1,79 @@
+@font-face {
+    font-family: 'Garamond';
+    src: url('path/to/garamond.woff2') format('woff2'),
+         url('path/to/garamond.woff') format('woff');
+    /* Дополнительные параметры шрифта, если нужно */
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+  }
+
+.main-wrapper {
+  margin: 0 auto;
+  min-width: 60vw;
+  max-width: 80vw;
+}
+
+.keybord-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.print-area {
+  width: 892px;
+  height: 200px;
+  margin: 50px 0;
+}
+
+.text {
+  width: 100%;
+  outline:none;
+  font-family: 'Roboto', sans-serif;
+}
+
+.keyboard-area {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:space-between;
+  padding: 4px;
+  gap: 5px;
+  width: 892px;
+}
+
+.key {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  border: solid 2px black;
+  background-color:rgb(128, 128, 128, 0.1);
+  border-radius: 5px;
+  height: 45px;
+  box-shadow: 0px 3px 1px 0px rgba(0, 0, 0, 0.5)
+}
+
+.key-hover {
+  cursor: pointer;
+  background-color: rgb(95, 158, 160, 20%);
+}
+
+.key-regular {
+  width: 50px;
+}
+
+.key-double {
+  width: 115px;
+}
+.key-long {
+  width: 415px;
+}
+
+.active,
+.capslock-active {
+  background-color: cadetblue;
+  box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.5);
+  transition: all 0.1s;
+}
