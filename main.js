@@ -63,11 +63,13 @@ function tst () {
                     register = "shift_key"
                     shiftPressing()
                     capsLock = true
+                    btn.classList.add("capslock-active")
                 }
                 else if (res[el]['key_detail'][lang][register] === "CapsLock" && capsLock === true) {
                     register = "key"
                     shiftPressing()
                     capsLock = false
+                    btn.classList.remove("capslock-active")
                 }
                 if (res[el]['key_detail'][lang][register] === "Shift" && capsLock === false) {
                     register = "shift_key"
