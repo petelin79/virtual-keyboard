@@ -1,3 +1,13 @@
+@font-face {
+    font-family: 'Garamond';
+    src: url('path/to/garamond.woff2') format('woff2'),
+         url('path/to/garamond.woff') format('woff');
+    /* Дополнительные параметры шрифта, если нужно */
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+  }
+
 .main-wrapper {
   margin: 0 auto;
   min-width: 60vw;
@@ -20,6 +30,7 @@
 .text {
   width: 100%;
   outline:none;
+  font-family: 'Roboto', sans-serif;
 }
 
 .keyboard-area {
@@ -36,6 +47,7 @@
   justify-content: center;
   align-items: center;
   text-align: center;
+  font-family: 'Roboto', sans-serif;
   border: solid 2px black;
   border-radius: 5px;
   height: 45px;
