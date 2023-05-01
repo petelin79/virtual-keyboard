@@ -82,9 +82,20 @@ function tst () {
                     cursorPosition ++
                 }
                 if (res[el]['key_detail'][lang][register] === "Backspace") {
+                    if (cursorPosition === 0  && !textArea.value.length){
+                        cursorPosition = textArea.value.length
+                    }
                     let endText =  textArea.value.substring(cursorPosition)
                     textArea.value = textArea.value.substring(0,cursorPosition-1) + endText
                     cursorPosition --
+                }
+                if (res[el]['key_detail'][lang][register] === "Del") {
+                    // if (cursorPosition === 0  && !textArea.value.length){
+                    //     cursorPosition = textArea.value.length
+                    // }
+                    let startText =  textArea.value.substring(0,cursorPosition)
+                    textArea.value = startText + textArea.value.substring(cursorPosition+1)
+                    // cursorPosition --
                 }
             }
 
