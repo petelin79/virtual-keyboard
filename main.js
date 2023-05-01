@@ -267,3 +267,14 @@ function shiftPressing () {
         el.textContent=Object.entries(x)[pos][1]['key_detail'][lang][register]
     })
 }
+
+
+
+window.addEventListener('beforeunload', () => {
+    localStorage.setItem('lang', lang);
+});
+
+window.addEventListener('load', () => {
+    lang =  localStorage.getItem('lang')
+    changeLang()
+})
